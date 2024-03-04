@@ -4,6 +4,7 @@ import ErrorPages from "../Error/ErrorPages";
 import Home from "../components/Home";
 import Login from "../AuthPages/Login";
 import Register from "../AuthPages/Register";
+import NewsDetils from "../components/NewsDetils";
  
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
         {
             path:"/register",
             element:<Register/>
+        },
+        {
+            path:"/news/:id",
+            element:<NewsDetils/>
         }
 ]);
 
