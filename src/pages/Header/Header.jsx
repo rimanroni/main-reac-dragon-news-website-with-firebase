@@ -15,7 +15,7 @@ const Header = () => {
           <div className='flex  px-8 mt-4 py-3 bg-[#F3F3F3]'>
             <button className='bg-red-500 text-white rounded py-2 px-5'>Latest</button>
             <Marquee pauseOnHover={true} className='ml-4'>
-            I can be a React component, multiple React components, or just some text.
+            Match Highlights: Germany vs Spain — as it happened   !   Match Highlights: Germany vs Spain as...
             </Marquee>
            </div>
           </div>

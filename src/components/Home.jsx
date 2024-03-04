@@ -1,6 +1,7 @@
 import React from 'react';
 import LeftSide from '../Layout/LeftSide/LeftSide';
 import RightSide from '../Layout/RightSide/RightSide';
+import News from './News';
 
 const Home = () => {
     return (
@@ -10,7 +11,7 @@ const Home = () => {
                     <LeftSide/>
                 </div>
                 <div className='col-span-2'>
-                    loading data...
+                    <News/>
                 </div>
                 <div>
                    <RightSide/>
