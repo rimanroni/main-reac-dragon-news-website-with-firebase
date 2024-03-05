@@ -5,6 +5,8 @@ import SocialLink from './SocialLink';
 import Qzone from './Qzone';
 import { useNavigate, useParams } from 'react-router-dom';
 import { FaArrowLeft } from "react-icons/fa";
+import { CiCalendar } from "react-icons/ci";
+import moment from 'moment';
 const NewsDetils = () => {
     const [data, setData] = useState()
     const navigate = useNavigate()
@@ -40,14 +42,32 @@ const NewsDetils = () => {
                    </div>
                     <h1 className='text-2xl mt-4 font-bold'>Editors Insight</h1>
                    <div className='grid gap-4 lg:grid-cols-3 mt-8'>
-                     <div>
+                     <div className='space-y-2'>
                         <img src="https://i.ibb.co/6PZqL7z/editors-Insight1.png" alt="" />
+                        <p>21 The Most Stylish Wedding Guest Dresses For Spring</p>
+                        <div className='flex  items-center space-x-3'>
+                            <p><CiCalendar/></p>
+                            <p>{moment().format('MMMM D, YYYY')}
+                            </p>
+                        </div>
                      </div>
-                     <div>
+                     <div className='space-y-2'>
                         <img src="https://i.ibb.co/ZS4xns4/editors-Insight2.png" alt="" />
+                        <p>21 The Most Stylish Wedding Guest Dresses For Spring</p>
+                        <div className='flex  items-center space-x-3'>
+                            <p><CiCalendar/></p>
+                            <p>{moment().format('MMMM D, YYYY')}
+                            </p>
+                        </div>
                      </div>
-                     <div>
+                     <div className='space-y-2'>
                         <img src="https://i.ibb.co/6PZqL7z/editors-Insight1.png" alt="" />
+                        <p>21 The Most Stylish Wedding Guest Dresses For Spring</p>
+                        <div className='flex  items-center space-x-3'>
+                            <p><CiCalendar/></p>
+                            <p>{moment().format('MMMM D, YYYY')}
+                            </p>
+                        </div>
                      </div>
                    </div>
                  </div>

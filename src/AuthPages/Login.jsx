@@ -1,12 +1,15 @@
 import React, { useContext } from 'react';
 import Navbar from '../pages/Navbar/Navbar';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { myContaxt } from '../ContaxApi/Contaxt';
 import toast, { Toaster } from 'react-hot-toast';
 
 const Login = () => {
     const {userLogIn} = useContext(myContaxt)
+    const location = useLocation();
+    const navigate = useNavigate()
+    console.log(location)
     const handleLogin = (e) =>{
         e.preventDefault();
         const form = new FormData(e.currentTarget);
@@ -15,6 +18,8 @@ const Login = () => {
         userLogIn(email, password)
         .then(result =>{
             toast.success('user log in success !')
+            navigate(location?.state ? location.state : '/')
+
         })
         .catch(error=>{
             toast.error('something wron please try again!')

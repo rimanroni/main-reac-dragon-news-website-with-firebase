@@ -3,15 +3,15 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
-
+console.log(import.meta.env.VITE_PASS)
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAmsNeEPis-TYk0a6muSSsaF1sAeasEkWU",
-  authDomain: "main-dragon-website.firebaseapp.com",
-  projectId: "main-dragon-website",
-  storageBucket: "main-dragon-website.appspot.com",
-  messagingSenderId: "5977897181",
-  appId: "1:5977897181:web:8a8b492baa93ce2f494334"
+  apiKey:  import.meta.env.VITE_APIKEY,
+  authDomain:  import.meta.env.VITE_AuthDomain,
+  projectId: import.meta.env.VITE_ProjectId,
+  storageBucket: import.meta.env.StorageBucket,
+  messagingSenderId: import.meta.env.MessagingSenderId,
+  appId:  import.meta.env.AppId
 };
 
 // Initialize Firebase
